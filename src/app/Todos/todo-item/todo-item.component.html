@@ -4,7 +4,7 @@
 
         <label (dblclick)="Editar()">{{todoInput.texto}}</label>
 
-        <button class="destroy"></button>
+        <button class="destroy" (click)="EliminarTarea()"></button>
 
     </div>
     <input class="edit" type="text" [formControl]="txtEditado" #inputFisico (blur)="terminarEdicion()">
