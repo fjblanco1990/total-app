@@ -29,7 +29,7 @@ export class TodoItemComponent implements OnInit {
     this.txtEditado = new FormControl(this.todoInput.texto, Validators.required);
   }
 
-  // se realizo el coment
+  // se realizo el coment desde develop
 
 
   Editar() {
