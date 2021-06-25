@@ -6,7 +6,7 @@ export const crear = createAction(
 );
 
 export const Completado = createAction(
-    '[TODO] Completado Todo',    
+    '[TODO] Completado Todo',
     props<{ id: number }>()
 );
 

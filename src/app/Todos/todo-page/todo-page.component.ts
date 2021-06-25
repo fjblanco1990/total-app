@@ -20,7 +20,7 @@ export class TodoPageComponent implements OnInit {
 
   CompletarTodo() {
     this.completados = !this.completados;
-    
+
     this.store.dispatch(Actions.CompletarTodo({ completado: this.completados }));
   }
 }
