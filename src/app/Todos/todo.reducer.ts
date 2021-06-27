@@ -42,8 +42,9 @@ const  _todoReducer = createReducer( estadoInicial,
                  ...todo,
                  completado: props.completado
                }
-        } );
-    } )
+        });
+    }),
+    on(Action.LimpiarCompletados, state => state.filter( filterVa => !filterVa.completado))
 );
 
 export function todoReducer (state:any, action:any) {
